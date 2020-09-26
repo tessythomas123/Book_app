@@ -6,12 +6,12 @@ import 'package:read_app/models/user.dart';
 class AuthenticationService {
   User usr = new User();
   final String url1 =
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDIiFA6T4r0S4ai6fWzbFPsjPnRNqgh7gE";
+      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=####SyDIiFA6T4r0S4ai6fWzbFPsjPnRNqgh7gE";
   final String url2 =
-      "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDIiFA6T4r0S4ai6fWzbFPsjPnRNqgh7gE";
+      "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=####SyDIiFA6T4r0S4ai6fWzbFPsjPnRNqgh7gE";
   final String userUrl =
       "https://firestore.googleapis.com/v1beta1/projects/book-store-c9fd2/databases/(default)/documents/Users";
-  final String key = '?key=AIzaSyDIiFA6T4r0S4ai6fWzbFPsjPnRNqgh7gE';
+  final String key = '?key=####SyDIiFA6T4r0S4ai6fWzbFPsjPnRNqgh7gE';
   Future<dynamic> loginWithEmailAndPassword(
       String email, String password) async {
     var response = await http.post(url1, body: {
