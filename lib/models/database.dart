@@ -7,7 +7,7 @@ import 'package:read_app/models/books.dart';
 class DatabaseService {
   final String bookurl =
       "https://firestore.googleapis.com/v1beta1/projects/book-store-c9fd2/databases/(default)/documents/Books";
-  final String key = '?key=AIzaSyDIiFA6T4r0S4ai6fWzbFPsjPnRNqgh7gE';
+  final String key = '?key=####aSyDIiFA6T4r0S4ai6fWzbFPsjPnRNqgh7gE';
   List<Image> image = [];
 
   Future<List<Book>> getBooks() async {
